@@ -41,6 +41,7 @@
 		1E531496261D389D007247E4 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E531495261D389D007247E4 /* InsetMapView.swift */; };
 		1E531499261D4271007247E4 /* ExternalWeblinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E531498261D4271007247E4 /* ExternalWeblinkView.swift */; };
 		1E53149C261D4807007247E4 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53149B261D4807007247E4 /* VideoModel.swift */; };
+		1E53149F261D48D9007247E4 /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53149E261D48D9007247E4 /* VideoListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		1E531495261D389D007247E4 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		1E531498261D4271007247E4 /* ExternalWeblinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWeblinkView.swift; sourceTree = "<group>"; };
 		1E53149B261D4807007247E4 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		1E53149E261D48D9007247E4 /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				1E531492261D3200007247E4 /* InsetFactView.swift */,
 				1E531495261D389D007247E4 /* InsetMapView.swift */,
 				1E531498261D4271007247E4 /* ExternalWeblinkView.swift */,
+				1E53149E261D48D9007247E4 /* VideoListItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				1E53149C261D4807007247E4 /* VideoModel.swift in Sources */,
 				1E53146B261CF18E007247E4 /* VideoListView.swift in Sources */,
 				1E531490261D26C5007247E4 /* InsetGalleryView.swift in Sources */,
+				1E53149F261D48D9007247E4 /* VideoListItemView.swift in Sources */,
 				1E531480261CFB2A007247E4 /* CodableBundleExtension.swift in Sources */,
 				1E53148D261D2244007247E4 /* HeadingView.swift in Sources */,
 			);
