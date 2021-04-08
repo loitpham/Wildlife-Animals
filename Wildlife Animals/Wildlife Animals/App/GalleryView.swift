@@ -73,7 +73,6 @@ struct GalleryView: View {
                     gridSwitch()
                 })
             } //: VSTACK
-            
         } //: SCROLL-VIEW
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(MotionAnimationView())

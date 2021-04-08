@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,7 +49,9 @@
 		1EEE94BB261E6E6400AE55EC /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE94BA261E6E6400AE55EC /* MotionAnimationView.swift */; };
 		1EEE94BE261E938F00AE55EC /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE94BD261E938F00AE55EC /* AnimalGridItemView.swift */; };
 		1EEE94C5261EA3E800AE55EC /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE94C4261EA3E800AE55EC /* Stickers.xcassets */; };
-		1EEE94C9261EA3E800AE55EC /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1EEE94C2261EA3E600AE55EC /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1EEE94C9261EA3E800AE55EC /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1EEE94C2261EA3E600AE55EC /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1EEE94D3261EA65400AE55EC /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE94D2261EA65400AE55EC /* CreditsView.swift */; };
+		1EEE94D8261EA88B00AE55EC /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE94D7261EA88B00AE55EC /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,9 @@
 		1EEE94C2261EA3E600AE55EC /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEE94C4261EA3E800AE55EC /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		1EEE94C6261EA3E800AE55EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EEE94D2261EA65400AE55EC /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		1EEE94D7261EA88B00AE55EC /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		1EEE94DD261EAB9600AE55EC /* Wildlife Animals.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wildlife Animals.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +162,8 @@
 		1E531437261CE9A3007247E4 /* Wildlife Animals */ = {
 			isa = PBXGroup;
 			children = (
+				1EEE94DD261EAB9600AE55EC /* Wildlife Animals.entitlements */,
+				1EEE94D6261EA87500AE55EC /* Modifier */,
 				1E5314A5261D5B08007247E4 /* Helpers */,
 				1E53147E261CFB08007247E4 /* Extension */,
 				1E531477261CF5EA007247E4 /* Model */,
@@ -236,6 +243,7 @@
 				1EEE94B7261E250B00AE55EC /* MapAnnotationView.swift */,
 				1EEE94BA261E6E6400AE55EC /* MotionAnimationView.swift */,
 				1EEE94BD261E938F00AE55EC /* AnimalGridItemView.swift */,
+				1EEE94D2261EA65400AE55EC /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +282,14 @@
 				1EEE94C6261EA3E800AE55EC /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		1EEE94D6261EA87500AE55EC /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE94D7261EA88B00AE55EC /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,8 +425,10 @@
 				1EEE94BE261E938F00AE55EC /* AnimalGridItemView.swift in Sources */,
 				1E531490261D26C5007247E4 /* InsetGalleryView.swift in Sources */,
 				1E53149F261D48D9007247E4 /* VideoListItemView.swift in Sources */,
+				1EEE94D3261EA65400AE55EC /* CreditsView.swift in Sources */,
 				1E531480261CFB2A007247E4 /* CodableBundleExtension.swift in Sources */,
 				1EEE94BB261E6E6400AE55EC /* MotionAnimationView.swift in Sources */,
+				1EEE94D8261EA88B00AE55EC /* CenterModifier.swift in Sources */,
 				1E53148D261D2244007247E4 /* HeadingView.swift in Sources */,
 				1E5314A3261D59D7007247E4 /* VideoPlayerView.swift in Sources */,
 			);
@@ -421,6 +439,7 @@
 /* Begin PBXTargetDependency section */
 		1EEE94C8261EA3E800AE55EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 1EEE94C1261EA3E600AE55EC /* Stickers */;
 			targetProxy = 1EEE94C7261EA3E800AE55EC /* PBXContainerItemProxy */;
 		};
@@ -548,6 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Wildlife Animals/Wildlife Animals.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Wildlife Animals/Preview Content\"";
 				DEVELOPMENT_TEAM = 975MAWB9JM;
@@ -560,6 +580,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.loipham.Wildlife-Animals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -570,6 +591,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Wildlife Animals/Wildlife Animals.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Wildlife Animals/Preview Content\"";
 				DEVELOPMENT_TEAM = 975MAWB9JM;
@@ -582,6 +604,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.loipham.Wildlife-Animals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -598,6 +621,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.loipham.Wildlife-Animals.Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -613,6 +637,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.loipham.Wildlife-Animals.Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

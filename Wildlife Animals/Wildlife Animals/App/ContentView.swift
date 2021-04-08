@@ -37,16 +37,6 @@ struct ContentView: View {
         }
     }
     
-//    func gridToolbarIcon() -> String {
-//        if gridColumn + 1 == 2 {
-//            return "square.grid.2x2"
-//        } else if gridColumn + 1 == 3 {
-//            return "square.grid.3x2"
-//        } else {
-//            return "rectangle.grid.1x2"
-//        }
-//    }
-    
     // MARK: - BODY
     
     var body: some View {
@@ -63,6 +53,10 @@ struct ContentView: View {
                                 AnimalListItemView(animal: item)
                             } //: NAVIGATION-LINK
                         } //: LOOP
+                        
+                        CreditsView()
+                            .modifier(CenterModifier())
+                        
                     } //: LIST
                 } else {
                     ScrollView(.vertical, showsIndicators: false) {
