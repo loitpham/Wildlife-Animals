@@ -48,7 +48,33 @@
 		1EEE94B8261E250B00AE55EC /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE94B7261E250B00AE55EC /* MapAnnotationView.swift */; };
 		1EEE94BB261E6E6400AE55EC /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE94BA261E6E6400AE55EC /* MotionAnimationView.swift */; };
 		1EEE94BE261E938F00AE55EC /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE94BD261E938F00AE55EC /* AnimalGridItemView.swift */; };
+		1EEE94C5261EA3E800AE55EC /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE94C4261EA3E800AE55EC /* Stickers.xcassets */; };
+		1EEE94C9261EA3E800AE55EC /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1EEE94C2261EA3E600AE55EC /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EEE94C7261EA3E800AE55EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E53142D261CE9A3007247E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EEE94C1261EA3E600AE55EC;
+			remoteInfo = Stickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1EEE94CD261EA3E800AE55EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1EEE94C9261EA3E800AE55EC /* Stickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1E531435261CE9A3007247E4 /* Wildlife Animals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wildlife Animals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +120,9 @@
 		1EEE94B7261E250B00AE55EC /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		1EEE94BA261E6E6400AE55EC /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		1EEE94BD261E938F00AE55EC /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
+		1EEE94C2261EA3E600AE55EC /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EEE94C4261EA3E800AE55EC /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		1EEE94C6261EA3E800AE55EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				1E531437261CE9A3007247E4 /* Wildlife Animals */,
+				1EEE94C3261EA3E600AE55EC /* Stickers */,
 				1E531436261CE9A3007247E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				1E531435261CE9A3007247E4 /* Wildlife Animals.app */,
+				1EEE94C2261EA3E600AE55EC /* Stickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,6 +267,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		1EEE94C3261EA3E600AE55EC /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE94C4261EA3E800AE55EC /* Stickers.xcassets */,
+				1EEE94C6261EA3E800AE55EC /* Info.plist */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,15 +286,32 @@
 				1E531431261CE9A3007247E4 /* Sources */,
 				1E531432261CE9A3007247E4 /* Frameworks */,
 				1E531433261CE9A3007247E4 /* Resources */,
+				1EEE94CD261EA3E800AE55EC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1EEE94C8261EA3E800AE55EC /* PBXTargetDependency */,
 			);
 			name = "Wildlife Animals";
 			productName = "Wildlife Animals";
 			productReference = 1E531435261CE9A3007247E4 /* Wildlife Animals.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1EEE94C1261EA3E600AE55EC /* Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EEE94CA261EA3E800AE55EC /* Build configuration list for PBXNativeTarget "Stickers" */;
+			buildPhases = (
+				1EEE94C0261EA3E600AE55EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stickers;
+			productName = Stickers;
+			productReference = 1EEE94C2261EA3E600AE55EC /* Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
 		};
 /* End PBXNativeTarget section */
 
@@ -266,6 +323,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					1E531434261CE9A3007247E4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1EEE94C1261EA3E600AE55EC = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -284,6 +344,7 @@
 			projectRoot = "";
 			targets = (
 				1E531434261CE9A3007247E4 /* Wildlife Animals */,
+				1EEE94C1261EA3E600AE55EC /* Stickers */,
 			);
 		};
 /* End PBXProject section */
@@ -309,6 +370,14 @@
 				1E531466261CEDFC007247E4 /* videos.json in Resources */,
 				1E531459261CEDAC007247E4 /* cheetah.mp4 in Resources */,
 				1E53145B261CEDAC007247E4 /* gorilla.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EEE94C0261EA3E600AE55EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEE94C5261EA3E800AE55EC /* Stickers.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +417,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EEE94C8261EA3E800AE55EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EEE94C1261EA3E600AE55EC /* Stickers */;
+			targetProxy = 1EEE94C7261EA3E800AE55EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1E531442261CE9A4007247E4 /* Debug */ = {
@@ -510,6 +587,36 @@
 			};
 			name = Release;
 		};
+		1EEE94CB261EA3E800AE55EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 975MAWB9JM;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.loipham.Wildlife-Animals.Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EEE94CC261EA3E800AE55EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 975MAWB9JM;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.loipham.Wildlife-Animals.Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -527,6 +634,15 @@
 			buildConfigurations = (
 				1E531445261CE9A4007247E4 /* Debug */,
 				1E531446261CE9A4007247E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EEE94CA261EA3E800AE55EC /* Build configuration list for PBXNativeTarget "Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEE94CB261EA3E800AE55EC /* Debug */,
+				1EEE94CC261EA3E800AE55EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
